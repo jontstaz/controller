@@ -12,6 +12,8 @@ services:
     networks:
       - controller_network
     container_name: backend_container
+    env_file:
+      - .env
     ports:
       - "8080:8080"
 
@@ -22,6 +24,8 @@ services:
     networks:
       - controller_network
     container_name: frontend_container
+    env_file:
+      - .env
     ports:
       - "3000:3000"
     environment:
