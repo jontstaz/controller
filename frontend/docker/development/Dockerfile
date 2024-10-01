@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY package-lock.json ./
-COPY .env ./
+# COPY .env ./
 
 RUN npm ci
 
